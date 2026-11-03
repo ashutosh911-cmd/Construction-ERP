@@ -522,7 +522,7 @@ jobs:
         # the same files ship in the public wheel. Fetch with
         # `gh run download <run id> -n frontend-dist -D frontend/dist`.
         if: matrix.os == 'ubuntu-latest'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: frontend-dist
           path: frontend/dist
